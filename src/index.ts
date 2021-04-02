@@ -3,5 +3,6 @@ import { User } from './models/User';
 const user = new User({ name: 'david', age: 20 })
 console.log(user.get('name'))
 console.log(user.get('age'))
-
-console.log('hi there')
+user.set({ name: 'not david' });
+console.log(user.get('name'))
+console.log(user.get('age'))
